@@ -1,0 +1,23 @@
+{
+  "name": "ts-dns",
+  "version": "1.0.0",
+  "description": "Ts implementation of a DNS server",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhflm/ts-dns.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhflm/ts-dns/issues"
+  },
+  "homepage": "https://github.com/bhflm/ts-dns#readme"
+}
