@@ -1,5 +1,27 @@
 # TS-DNS
 
+**WIP** ⚠️⚠️⚠️⚠️
+
+
+
+-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+
+@TODO
+
+✔️ Boilerplate config for ts project
+
+[ ] Implement bit manipulation library 😵
+
+✔️ Implement parser for DNS Header 
+
+[ ] Implement parser for DNS Question 
+
+[ ] Implement parser for DNS Answer, Authority, Additional Records 
+
+✔️ Server / Client test for UDP Messaging 
+
+-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+
 Takeaways learnt while developing a DNS server from scratch
 
 Inspired from 
