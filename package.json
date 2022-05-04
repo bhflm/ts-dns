@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "Ts implementation of a DNS server",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "pino": "^7.11.0"
+  },
   "devDependencies": {
     "@babel/preset-typescript": "^7.16.7",
     "@types/jest": "^27.5.0",
     "@types/node": "^17.0.31",
+    "@types/pino": "^7.0.5",
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",
     "eslint": "^8.14.0",
