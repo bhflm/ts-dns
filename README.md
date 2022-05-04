@@ -10,6 +10,7 @@ https://medium.com/@openmohan/dns-basics-and-building-simple-dns-server-in-go-6c
 
 https://datatracker.ietf.org/doc/html/rfc1034
 
+
 Header section format: 
 
 https://tools.ietf.org/html/rfc1035#section-4.1.1

@@ -2,7 +2,10 @@ import * as dgram from 'dgram';
 import { logger } from './logger';
 
 
-const PORT = 21000;
+const PORT = 21000; // process.env.PORT
+const HOST = '0.0.0.0'; // process.env.HOST
+
+
 const server = dgram.createSocket('udp4');
 
 server.on('error', (error) => {
@@ -10,7 +13,7 @@ server.on('error', (error) => {
   server.close()
 })
 
-server.on('listening',function(){
+server.on('listening', function(){
   const address = server.address();
   const port = address.port;
 
@@ -18,8 +21,11 @@ server.on('listening',function(){
   logger.info('UDPServer IP: ' + address.address);
 }); 
 
-server.on('message',function(msg, info){
-  logger.info(msg.toString, "| Received ${msg.length} bytes from ${info.address}:${info.port}")
+server.on('message', function(msg, info){
+
+  logger.info(`Received ${msg.length} bytes from ${info.address}:${info.port}`);
+  // Parse message: 
+  const DNSPacket = new DNSPacket(msg);
   
   const response = {
       serverPort: 8080, // check TBD
